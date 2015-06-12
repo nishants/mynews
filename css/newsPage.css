@@ -1,0 +1,78 @@
+/*Displays the titlte of news category*/
+#news-title-pane{
+	height: 7%;	
+	width : 96%;
+	display : block;
+	margin-left : 2%;
+	margin-right : 2%;
+}
+
+/*Console for news source selection buttons , auto-update  button , coutdown timer*/
+#console-pane{
+	width: 100%;
+	height: 10%;
+	display : block;
+}
+
+/*Holds the Google and CNN buttons*/
+#news_source-options-pane{
+	display : inline;	
+	float : left;
+	clear : left;
+	width : 46%;
+	padding-right : 4%;
+}
+
+/*Holds the timer , suto-update button Must be directed from right to left*/
+#timer-and-refresh-pane{
+	display : inline;
+	float : right;
+	clear : right;	
+	height :100%;
+	width : 46%;
+	padding-right : 4%;
+	direction: rtl;
+}
+/*Holds auto update button*/
+#refresh-option-pane {
+	display: block;
+	height: 34%;
+	vertical-align: text-bottom;
+}
+
+/*The inout typ to accept update interval is held here*/
+#set-update-interval {
+	height: 33%;
+	display: block;
+	vertical-align: text-bottom;
+}
+
+/*Holds the timer countdown text*/
+#timer-pane {
+	height: 33%;
+	display: block;
+	vertical-align: text-bottom;
+}
+
+/*This div is required by the news.js to put all the feeds into*/
+#mynews-feed{
+	height :75%;
+	width : 100%;
+	display : block;
+	overflow : auto;
+	background-color: #FFFFFF;
+}
+
+/*Applies to all the individual divs containing the news feed(all individal news)*/
+#mynews-feed div{
+	display : block ;	
+	width : 92%;
+	background-color: #DCDCDC;
+	margin : 2%;
+	padding : 2%;
+}
+
+/*Avoid blue lines around images in internet explorer*/
+img {
+    border-style: none;
+}

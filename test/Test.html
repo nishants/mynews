@@ -1,0 +1,31 @@
+<html>
+  <head>
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+		<script type="text/javascript" src="testNews.js"></script>
+		<script type="text/javascript" src="../js/news.js"></script>
+		<script type="text/javascript">
+				function hello(){
+		alert("Application loaded");
+	}
+		</script>
+		
+
+  </head>
+  <body>
+    <div id="mynews-feed"></div>
+	<script type="text/javascript">
+	try{
+		loadNewsPage(loadTest);	
+	}catch(error){
+		var message = ("Could not load feeds , please check your internet connection and try again.\n");
+		message+="\nPossible causes \n";
+		message+="  1. Internet connection not available. \n";
+		message+="  2. The feed links are down. \n";
+		message+="  3. The feed links are blocked on your server. ";
+		alert(message);
+		
+	}
+
+    </script>
+  </body>
+</html>
